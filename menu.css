@@ -1,0 +1,120 @@
+/* Global styles */
+
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Rufina";
+    src: url("./Rufina/Rufina-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    /* background-color: rgb(21, 88, 115); */
+}
+
+.btn{
+    font-family: "Rufina";
+    height: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    padding:0 2.5rem;
+    border: 2px solid white;
+    cursor: pointer;
+    /* transition: 0.3s; ease*/
+    white-space: nowrap;
+
+}
+/* 
+.btn:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: green;
+} */
+
+.btn.clear{
+    background-color: rgba(0, 0, 0, 0);
+    /* color: opaque; */
+}
+
+ /* header styles */
+.page-header{
+    background-image: url("./Photos/menu-header.png");
+    padding: 1rem 5rem 8rem 5rem;
+    color: white;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    /* background-color: rgb(133, 77, 3); */
+}
+
+.navbar .left{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.navbar .right{
+    display:flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar .nav-menu{
+    width: 3rem;
+    height:auto;
+    display: none;
+}
+
+.navbar .logo{
+    height: 5rem;
+}
+
+.navbar .right .phone{
+    font-family: "Lato";
+    font-size: 1.2rem;
+}
+
+.page-header .hero-container{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+
+}
+
+.title{
+    font-family: "Rufina";
+    font-size: 8rem;
+    width: 70%;
+    line-height:0.9;
+    margin: 0;
+}
+
+.subtitle{
+    font-family: "Rufina";
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    width: 60%;
+}

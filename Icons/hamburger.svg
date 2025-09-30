@@ -1,0 +1,6 @@
+<!-- source: https://www.svgrepo.com/vectors/hamburger%20menu/ -->
+<svg width="512px" height="512px" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="352" height="32" x="80" y="96" fill="white" class="ci-primary"/>
+  <rect width="352" height="32" x="80" y="240" fill="white" class="ci-primary"/>
+  <rect width="352" height="32" x="80" y="384" fill="white" class="ci-primary"/>
+</svg>
