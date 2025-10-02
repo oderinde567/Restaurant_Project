@@ -74,7 +74,6 @@ body{
     gap: 1rem;
 }
 
-
 .navbar .right{
     display:flex;
     align-items: center;
@@ -117,4 +116,59 @@ body{
     font-size: 1.7rem;
     margin-top: 2rem;
     width: 60%;
+}
+
+/* Main content styles */
+
+
+main{
+    overflow-x:hidden;
+
+}
+
+.section-heading-container{
+text-align: center;
+padding: 4rem 2rem 2rem 2rem;
+}
+
+.section-heading-container .section-title{
+    font-family: "Rufina";
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.section-heading-container .section-subtitle{
+    font-family: "Lato";
+    font-size: 1.9rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 9rem;
+    gap: 4rem;
+    /* background-color: red; */
+}
+
+.menu-container .menu-img{
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.menu-container .menu-options{
+    width: 50%;
+}
+
+.menu-container .menu-item > p{
+    font-size: 3rem;
+    font-family: "Rufina";
+    text-align: right;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
