@@ -172,3 +172,155 @@ padding: 4rem 2rem 2rem 2rem;
     margin-bottom: 1rem;
     margin-top: 0;
 }
+
+/* Reservation */
+
+/* .reservation {
+  background: #fafafa;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.reservation h2 {
+  color: #1a2600;
+  margin-bottom: 1rem;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.reservation-form input,
+.reservation-form select {
+  width: 250px;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+  border-color: #1a2600;
+}
+
+.reservation-form button {
+  margin-top: 1rem;
+  background: #1a2600;
+  color: #fff;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.reservation-form button:hover {
+  background: #324b0b;
+} */
+
+/* Footer */
+/* .footer {
+  background: #1a2600;
+  color: #fff;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-info {
+  text-align: center;
+}
+
+.subscribe {
+  text-align: center;
+}
+
+.subscribe h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input {
+  background: #1a2600;
+  color: #ffffff;
+  padding: 12px 20px;
+  border-color: #ffffff;
+  border-radius: 8px;
+  width: 250px;
+}
+
+.subscribe-form button {
+  background: #1a2600;
+  align-items: right;
+  color: #f6f6f6;
+  border-color: white;
+  border-radius: 8px;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.subscribe-form button:hover {
+  background: #1a2600;
+} */
+
+/* Responsive */
+/* @media (max-width: 600px) {
+  .menu-section h3 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} */
+
+.menu-container .menu-item .item-info {
+  border-top: 4px dotted black;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu-container .menu-item .item-info h3{
+font-size: 2.5rem;
+font-family: "Rufina";
+margin-top: 0;
+margin-bottom: 1rem;
+line-height: 1.1;
+}
+
+.menu-container .menu-item .item-info p{
+font-size: 1.3rem;
+font-family: "Lato";
+margin-top: 0;
+line-height: 1.1;
+}
+
+
+/* Make a reservation styles */
+
+.reservation-container{
+  background-color: rgb(255, 254, 238);
+  padding: 8rem 8rem;
+  text-align: center;
+}
+
+.reservation-container .scheduling-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 2rem;
+
+}
