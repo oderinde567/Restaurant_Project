@@ -496,5 +496,69 @@ footer{
         padding: 3rem 2rem;
         text-align: center;
     }
+}
 
+/* *Mobile phones* */
+
+@media screen and (max-width: 480px){
+    .page-header{
+        padding: 1rem 1rem 4rem 1rem;
+        min-height: 80vh;
+    }
+
+
+    .navbar .logo{
+        height: 3rem;
+    }
+
+    .navbar .nav-menu{
+
+        width: 2rem;
+    }
+    
+
+    .btn{
+        height: 3rem;
+        font-size: 1.1rem;
+        padding: 0 1.5rem;
+    }
+
+
+    .title{
+        font-size: 3.5rem;
+        width: 100%;
+    }
+
+
+    .section-heading-container {
+        padding: 3rem 1rem 2rem 1rem;
+    }
+
+
+    .section-heading-container .section-title{
+        font-size: 3rem;
+    }
+
+
+    .menu-container .section-subtitle{
+        padding: 2rem 1rem;
+        gap: 2rem;
+   }
+
+
+   .section-heading-container .section-subtitle{
+    font-size: 1rem;
+   }
+
+
+   .menu-container{
+    padding: 2rem 1rem;
+    gap: 2rem;
+   }
+
+
+   .menu-container .menu-item{
+    margin-bottom: 2rem;
+
+   }
 }
