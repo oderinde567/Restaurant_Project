@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bluearnk_Travel_Agency</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons (Bootstrap Icons) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent: #0d6efd;
+      --muted: #6c757d;
+    }
+
+    /* Hero */
+    .hero{
+      min-height: 60vh;
+      background-image: linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)), url('./Photos/bali.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      display:flex;
+      align-items:center;
+    }
+
+    .hero .container{
+      z-index:2;
+    }
+
+    /* Cards */
+    .destination-card img{
+      height: 180px;
+      object-fit: cover;
+    }
+
+    /* Footer */
+    footer{
+      background:#0f1724;
+      color:#cbd5e1;
+      padding:2rem 0;
+    }
+
+    /* Contact form custom width on larger screens */
+    @media(min-width:992px){
+      .contact-card{max-width:720px;margin-left:auto;margin-right:auto}
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Bluearnk City Tour</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container text-center py-5">
+      <h1 class="display-5 fw-bold">Discover Your Next Adventure</h1>
+      <p class="lead mb-4">Hand-picked trips, unbeatable prices — travel made simple.</p>
+      <a href="#destinations" class="btn btn-primary btn-lg me-2"><i class="bi bi-globe"></i> Explore Destinations</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg"><i class="bi bi-chat-dots"></i> Get a Quote</a>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+
+      <!-- Destinations -->
+      <section id="destinations" class="mb-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="h3">Popular Destinations</h2>
+          <p class="text-muted mb-0">Find your perfect getaway</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card destination-card h-100 shadow-sm">
+              <img src="./Photos/bali.jpeg" class="card-img-top" alt="Bali beach">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Alausa, Secretariat</h5>
+                <p class="card-text text-muted">The seat of Lagos power, purpose, and progress 💪🏽.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">From ₦5,000</span>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card destination-card h-100 shadow-sm">
+              <img src="./Photos/Swiss.jpeg" class="card-img-top" alt="Swiss mountains">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Ikeja City Mall, Lagos</h5>
+                <p class="card-text text-muted">Meet, shop, dine — the ICM experience never gets old.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">From ₦15,000</span>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card destination-card h-100 shadow-sm">
+              <img src="./Photos/hero.jpeg" class="card-img-top" alt="New York skyline">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Ile Oja, Opebi Ikeja</h5>
+                <p class="card-text text-muted">Experience the best of Opebi, all in one market.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">From ₦55,000</span>
+                  <a href="#" class="btn btn-sm btn-outline-primary">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Tours (Accordion) -->
+      <section id="tours" class="mb-5">
+        <h2 class="h3 mb-3">Featured Tours</h2>
+        <div class="accordion" id="toursAccordion">
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Alausa Secretariat — 2 Days
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#toursAccordion">
+              <div class="accordion-body">
+                Explore the governors office, JJT park, and the Alausa environs.
+                <div class="mt-3"><a href="#" class="link-primary">View Details</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Ikeja City Mall — 3 Days
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#toursAccordion">
+              <div class="accordion-body">
+                Watch a movie, shop or chop? It’s all here!.
+                <div class="mt-3"><a href="#" class="link-primary">View Details</a></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Ile Oja, Opebi Ikeja — 2 Days
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#toursAccordion">
+              <div class="accordion-body">
+                A curated city market packed with sightseeing, food tours and a live performance night out.
+                <div class="mt-3"><a href="#" class="link-primary">View Details</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact" class="mb-5">
+        <h2 class="h3 mb-3">Get in touch</h2>
+        <p class="text-muted">Tell us where you want to go and we'll create a plan for you.</p>
+
+        <div class="card contact-card shadow-sm p-4">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full name</label>
+                <input type="text" class="form-control" placeholder="Jane Doe" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Destination of interest</label>
+                <select class="form-select">
+                  <option selected>Choose...</option>
+                  <option>Alausa Secretariat</option>
+                  <option>Ikeja City Mall</option>
+                  <option>Ile Oja, Opebi</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">Travel date (approx.)</label>
+                <input type="month" class="form-control">
+              </div>
+
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" placeholder="Tell us more about your trip..."></textarea>
+              </div>
+
+              <div class="col-12 text-end">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Bluearnk City Tour. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
