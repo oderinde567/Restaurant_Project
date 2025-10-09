@@ -10,6 +10,12 @@
     src: url("./Rufina/Rufina-Bold.ttf");
     font-weight: bold;
 }
+ 
+/* CSS Variable */
+:root {
+    --footer--bg--color: #233000;
+    --footer-text-color: white;
+}
 
 *{
     box-sizing: border-box;
@@ -236,46 +242,121 @@ line-height: 1.1;
 
 
 
-
 /* Footer */
-footer{
-    background-color: #1a2600; /* dark olive green */
-  color: #ffffff;
-  padding: 60px 10%;
-  font-family: 'Rufina';
-}
 
+footer{
+  background-color: var(--footer--bg--color);
+  color: var(--footer-text-color);
+
+}
 
 .contact-container {
-  display: flex;
-  justify-content: space-between;
-  align-items:flex-end
-  margin-bottom: 40px;
-  gap: 60px;
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
 }
+
+.contact-container .left{
+    flex: 0 0 auto; /*if a width or height is not explicitly set on the item or itself  */
+
+}
+
+.contact-container .middle{
+    flex: 0 0 auto; 
+}
+
+.contact-container .right{
+    flex: 1;
+    max-width: 400px;
+}
+
 
 .left .footer-title {
-  font-size: 2.4rem;
-  line-height: 1.3;
-  color: #ffffff;
+    font-family: "Rufina";
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.contact-container .footer-subtitle{
+    font-family: "Rufina";
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container .middle{
+    font-family: "Lato";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 
-.middle {
-  max-width: 200px;
+.contact-container .middle p{
+    font-family: "Lato";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 
-.footer-subtitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #ffffff;
-  margin-bottom: 10px;
+.contact-container .newsletter-container{
+    display:flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
-.middle p {
-  font-family: 'Lato', sans-serif;
-  color: #d9d9d9;
-  line-height: 1.6;
-  font-size: 0.95rem;
+.contact-container .newsletter-container input{
+    flex: 1;
+    height: 4rem;
+    border: 2px solid white;
+    background-color: black;
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+    color: white;
+}
+
+.contact-container .newsletter-container input::placeholder {
+    color: #CCC;        
+}
+
+
+.btn.secondary{
+    border:none;
+    background-color: #5e6600;
+}
+
+.btn.secondary:hover{
+    background-color: #aceb4e;
+}
+
+.newsletter-info{
+    font-family: "Lato";
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin: 0;
+}
+
+.copyright-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem 5rem 8rem;
+    font-family: "Lato";
+    border-top: 2px dashed white;
+}
+
+.socials-container{
+    display:flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.socials-container img{
+    width: 2rem;
+    background-color: rgb(125, 224, 3);
+    height: 2rem;
 }
